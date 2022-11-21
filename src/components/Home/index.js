@@ -28,6 +28,13 @@ class Home extends Component {
         }
      }
 
+     onClickLogout = () => {
+        const {history} = this.props 
+        
+        Cookie.remove("jwt_token")
+        history.replace("/login")
+     }
+
     render(){
         const {twitsList} = this.state
         
@@ -39,6 +46,7 @@ class Home extends Component {
                 <TwitList key={eachTwit.username} twitDetails={eachTwit}/>
             ))}
            </ul>
+           <button className='btn-login' onClick={this.onClickLogout} type='button'>Logout</button>
            </div>
         )
     }
