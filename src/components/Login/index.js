@@ -16,7 +16,6 @@ class Login extends Component {
         history.replace('/')
     }
    
-
     onSubmitUserDetails = async event => {
         event.preventDefault()
         const {username,password} = this.state
@@ -37,7 +36,6 @@ class Login extends Component {
        
 
         if(response.ok === true){
-           
             const data = await response.json()
             this.onSubmitSuccess(data.jwtToken)
         }
@@ -60,6 +58,7 @@ class Login extends Component {
         if (jwtToken !== undefined){
             return <Redirect to="/" />
         }
+
         return(
             <div className='main-login-container'> 
               <form className='form-container' onSubmit={this.onSubmitUserDetails}>

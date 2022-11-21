@@ -11,3 +11,50 @@
     border-radius: 7px;
     margin: 10px;
 }
+.name-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.name-first-letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto";
+    margin-right: 10px;
+   
+}
+
+.color1{
+    background-color: #32a852;
+}
+
+.color3{
+    background-color: #4954b8;
+}
+
+.color4{
+    background-color: #c640ff;
+}
+
+.color5{
+    background-color: #e8502a;
+}
+
+.color6{
+    background-color: #20e33d;
+}
+.color2{
+    background-color: #a5e320;
+}
+
