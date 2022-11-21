@@ -1,0 +1,13 @@
+.li-container{
+    width: 850px;
+    min-height: 150px;
+    border: 1px solid #998e8d;
+    box-shadow: 0px 0px 2px 0px #998e8d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 10px;
+}
